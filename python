@@ -1,0 +1,58 @@
+from math import *
+
+print("Although I have only learned C++, I believe that python will be no issue for me to learn quickly.")
+print("Thus, I have made a simple python program to show you I can quickly learn.")
+print("\n")
+print("My name is Juliet Wright. I am a new transfer student and physics major at UCB.")
+name = input("What is your name? ")
+print("It is certainly nice to meet you, " + name + ", I hope you enjoy my silly program:)")
+print("\n")
+
+print("Let's check out my skills...")
+num = input("Enter a number you would like me to double: ")
+result = pow(float(num), 2)
+print("The number doubled is: " + str(result))
+print("\n")
+
+print("Now, I know the sun is a yellow dwarf star, but I'd like to prove that the sun is technically green.")
+print("Wien's Displacement Law can find the peak wavelength of our sun with this equation: ")
+print("λ(peak) = λ(T)/T(surface temperature)")
+print("where λ(T) = 2.898*10^6 nm*K")
+print("The surface temperature of the sun is 5778 Kelvin, so let's now find the peak wavelength of the sun!")
+
+temp = 5778
+lamT = 2.898*pow(10, 6)
+peak = lamT/temp
+
+print("The sun has a peak wavelength of approximately: " + str(round(peak)) + " nm or nanometers")
+print("This happens to be the same wavelength as the color green!")
+print("\n")
+print("Now you try. Pick a star and look up it's surface temperature.")
+temp2 = input("Enter the surface temperature of your star in degrees Kelvin: ")
+
+peak2 = lamT/float(temp2)
+print("Your star has a peak wavelength of approximately: " + str(round(peak2)) + " nm or nanometers")
+
+if (peak2 < 750 and peak2 > 400):
+    print("\nThis star's peak wavelength is in the visible light spectrum!")
+else:
+    print("\nThis star's peak wavelength is outside of the visible light spectrum\nwhich cannot be seen by the naked eye.")
+
+print("\nNew Test! I bet I can use F=mg to find out your mass!")
+force = input("Enter how much do you weigh in pounds (lbs): ")
+
+grav = 9.8
+mass = (4.45*float(force))/grav
+
+print("Your mass is approximately " + str(round(mass)) + "kg or kilograms")
+
+print("\n")
+ans = input("Now that you have seen my capabilities, would you like to add me to your ATLAS research team?\nEnter 'y' for yes and 'n' for no. ")
+
+while ans == "n":
+    ans2 = input("Are you sure? Enter 'y' for yes and 'n' for no. ")
+    if (ans2 == "n"):
+        break
+
+print("Excellent decision, " + name + ", I won't let you down!")
+
