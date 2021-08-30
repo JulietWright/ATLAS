@@ -9,9 +9,7 @@ print("It is certainly nice to meet you, " + name + ", I hope you enjoy my silly
 print("\n")
 
 print("Let's check out my skills...")
-num = input("Enter a number you would like me to double: ")
-result = pow(float(num), 2)
-print("The number doubled is: " + str(result))
+
 print("\n")
 
 print("Now, I know the sun is a yellow dwarf star, but I'd like to prove that the sun is technically green.")
@@ -39,7 +37,7 @@ else:
     print("\nThis star's peak wavelength is outside of the visible light spectrum\nwhich cannot be seen by the naked eye.")
 
 print("\nNew Test! I bet I can use F=mg to find out your mass!")
-force = input("Enter how much do you weigh in pounds (lbs): ")
+force = input("Enter how much you weigh in pounds (lbs): ")
 
 grav = 9.8
 mass = (4.45*float(force))/grav
@@ -50,9 +48,8 @@ print("\n")
 ans = input("Now that you have seen my capabilities, would you like to add me to your ATLAS research team?\nEnter 'y' for yes and 'n' for no. ")
 
 while ans == "n":
-    ans2 = input("Are you sure? Enter 'y' for yes and 'n' for no. ")
+    ans2 = input("Are you sure?\nEnter 'y' for yes and 'n' for no. ")
     if (ans2 == "n"):
         break
 
 print("Excellent decision, " + name + ", I won't let you down!")
-
